@@ -7,7 +7,7 @@ var lowerCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var speacialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*",];
 var userOptions = [];
 
-//promtps for password criteria
+
 
 
 var password = 'hello';
@@ -29,8 +29,10 @@ function generatePassword() {
   var confirmNumbers = confirm('would you like to use numbers in your password?');
   //user must choose one
   var mustChooseOne = confirm('you must choose atleast one to generate a password');
-
-  if (confirmCapitalLetters) {
+// random generator 8-128
+var random = math.floor(math.random() * 128) + 8;
+  
+if (confirmCapitalLetters) {
     userOptions.push(...AlphaCharacters)
   }
 
@@ -46,6 +48,7 @@ function generatePassword() {
     userOptions.push(...numbers)
   }
 
+  Math.random()
 
   console.log(userOptions)
   return password;
