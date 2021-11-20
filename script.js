@@ -27,6 +27,9 @@ var confirmCaptialLetters =  confirm('Would you like to use capital letters?');
 var confirmLowerCaseLetters = confirm('Would you like lowercase letters?');
 //Would you like to use numbers
 var confirmNumbers = confirm('would you like to use numbers in your password?');
+//user must choose one
+var mustChooseOne = confirm('you must choose atleast one to generate a password');
+
 
 if (confirmCaptialLetters === true){
   userOptions.push(...AlphaCharacters)
@@ -45,6 +48,11 @@ if (confirmLowerCaseLetters === true){
 if (confirmNumbers === true){
   userOptions.push(...numbers)
 }
+
+if (confirmPasswordLength, confirmSpecialCharacters, confirmCaptialLetters, confirmLowerCaseLetters, confirmNumbers === false){
+
+}
+
 
 console.log(userOptions)
 return password;
