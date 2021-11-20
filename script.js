@@ -20,13 +20,13 @@ function generatePassword() {
   //length of password?
   var confirmPasswordLength = prompt("Enter a password between 8 -128");
 //character types to include?
-  var confirmSpecialCharacters = confirm('Would you like to use specail characters?');
+  var confirmSpecialCharacters = confirm('Would you like to use special characters?');
 //would you like to us Capital letters?
 var confirmCaptialLetters =  confirm('Would you like to use capital letters?');
 //would you like lowercase letters?
 var confirmLowerCaseLetters = confirm('Would you like lowercase letters?');
 //Would you like to use numbers
-var confirmNumbers = ('would you like to use numbers in your password?');
+var confirmNumbers = confirm('would you like to use numbers in your password?');
 
 if (confirmCaptialLetters === true){
   userOptions.push(...AlphaCharacters)
@@ -50,9 +50,6 @@ console.log(userOptions)
 return password;
 }
 
-
-
-//after answering each promt one character type should be selected
 //password is generated matching selected criteria
 //password will apear on the screen
 // Get references to the #generate element
