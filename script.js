@@ -10,7 +10,7 @@ var userOptions = [];
 
 
 
-var password = 'hello';
+var password = "";
 
 
 
@@ -30,7 +30,7 @@ function generatePassword() {
   //user must choose one
   var mustChooseOne = confirm('you must choose atleast one to generate a password');
 // random generator 8-128
-var random = math.floor(math.random() * 128) + 8;
+
   
 if (confirmCapitalLetters) {
     userOptions.push(...AlphaCharacters)
@@ -48,17 +48,16 @@ if (confirmCapitalLetters) {
     userOptions.push(...numbers)
   }
 
-  Math.random()
 
   console.log(userOptions)
+password ="8NypS!jMq5";
   return password;
-}
 
-//password is generated matching selected criteria
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
+//console.log()
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
